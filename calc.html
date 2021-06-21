@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Calc</title>
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-left">
+            <ul>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="header__top-right">
+            <div class="item"> <i class="icon-locale"></i><span>г. Москва, 2-я Кабельная ул., д. 2, стр. 9</span></div><a class="item" href="mailto:info@businesouner.ru"><i class="icon-email"></i><span>info@businesouner.ru</span></a>
+            <button class="item" type="button"><i class="icon-search"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="header__center">
+        <div class="container">
+          <div class="header__center-logo"><a href="#"><img src="./img/logo.svg" alt="logo"></a></div>
+          <div class="header__center-phone"><a class="text" href="tel:74955558899">+7 495 555 88 99</a>
+            <button class="button-blue" type="button"> <span>Обратный звонок</span><i class="icon-phone"></i></button>
+          </div>
+          <div class="header__center-burger" id="smart_menu_active">
+            <div class="button-blue"><span>Меню</span>
+              <div class="burger"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-max">
+        <nav class="header__nav">
+          <ul>
+            <li><a class="dropdown-active" href="#">Ремонт помещений</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Ремонт коттеджей</a></li>
+                <li><a href="#">Ремонт коттеджей</a></li>
+                <li><a href="#">Ремонт магазинов</a></li>
+                <li><a href="#">Ремонт магазинов</a></li>
+                <li><a href="#">Ремонт офисов</a></li>
+                <li><a href="#">Ремонт офисов</a></li>
+                <li><a href="#">Ремонт гостиниц</a></li>
+                <li><a href="#">Ремонт гостиниц</a></li>
+                <li><a href="#">Ремонт аптек</a></li>
+                <li><a href="#">Ремонт аптек</a></li>
+                <li><a href="#">Ремонт коттеджей</a></li>
+                <li><a href="#">Ремонт коттеджей</a></li>
+                <li><a href="#">Ремонт магазинов</a></li>
+                <li><a href="#">Ремонт магазинов</a></li>
+                <li><a href="#">Ремонт офисов</a></li>
+                <li><a href="#">Ремонт офисов</a></li>
+                <li><a href="#">Ремонт гостиниц</a></li>
+                <li><a href="#">Ремонт гостиниц</a></li>
+                <li><a href="#">Ремонт аптек</a></li>
+                <li><a href="#">Ремонт аптек</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Ремонт котеджей</a></li>
+            <li><a href="#">Отделочные работы</a></li>
+            <li><a href="#">Строительные работы</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <ul class="list_menu"></ul>
+    <section class="calc">
+      <div class="container">
+        <h1 class="title">Калькулятор</h1>
+        <div class="flex flex-wrap flex-between">
+          <div class="block_wrap">
+            <form action="/"> <span class="title">Рассчитать цену</span>
+              <div class="custom-select">
+                <select class="field" name="category">
+                  <option value="1">Выберете категорию</option>
+                  <option value="2">Выберете категорию 2</option>
+                  <option value="3">Выберете категорию 3</option>
+                  <option value="4">Выберете категорию 4</option>
+                </select>
+              </div>
+              <div class="custom-select">
+                <select class="field" name="service">
+                  <option value="1">Выберете услугу</option>
+                  <option value="2">Выберете услугу 2</option>
+                  <option value="3">Выберете услугу 3</option>
+                  <option value="4">Выберете услугу 4</option>
+                </select>
+              </div>
+              <div class="custom-select">
+                <select class="field" name="level">
+                  <option value="1">Уровень “Стандарт”</option>
+                  <option value="2">Уровень “Стандарт” 2</option>
+                  <option value="3">Уровень “Стандарт” 3</option>
+                  <option value="4">Уровень “Стандарт” 4</option>
+                </select>
+              </div>
+              <input class="field" type="text" placeholder="Сколько квадратных метров?">
+              <div class="flex flex-wrap">
+                <div class="subtitle">Итого: 0 руб.</div>
+                <div class="subtitle">Сроки: 0 дней</div>
+              </div>
+            </form>
+          </div>
+          <div class="block_wrap">
+            <form action="/">
+              <h3 class="title">Оставить заявку</h3>
+              <input class="field" type="text" placeholder="Имя">
+              <input class="field _js_phone_field" type="text" placeholder="Телефон">
+              <textarea class="field" placeholder="Ваше сообщение"></textarea>
+              <label class="field-checked">
+                <input type="checkbox" name="checked"><span class="check"></span>
+                <p>Согласен на обработку персональных данных</p>
+              </label>
+              <button class="button-border" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="logo"><a href="/"><img src="./img/logo.svg" alt="logo"></a></div>
+        </div>
+        <div class="footer__bottom">
+          <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Сотрудничество</a></li>
+            <li><a href="#">Условия работы</a></li>
+            <li><a href="#">Отзывы</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Калькулятор</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Акции</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="#">Портфолио</a></li>
+          </ul>
+          <div class="footer__bottom-phone"><a class="text" href="tel:74955558899">+7 495 555 88 99</a>
+            <button class="button-blue" type="button">Обратный звонок</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./libs/custom-select/selectal.min.js"></script>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <script src="./js/common.js"></script>
+  </body>
+</html>
