@@ -101,7 +101,7 @@ mobile_list_menu.forEach(e=> {
 		let clone = dropDownMenu.querySelectorAll('li');
 
 		clone.forEach(e=> {
-
+			document.querySelector('.list_menu').classList.add('active');
 			document.querySelector('.list_menu').appendChild(e.cloneNode(true));
 		});
 
